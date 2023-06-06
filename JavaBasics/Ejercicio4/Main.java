@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        //Instancia de la clase Persona
+        //Instancia de la clase Trabajador
         Cliente Paco = new Cliente();
 
         //Procedemos a cambiar los atributos de Paco con los "Setters"
@@ -17,7 +17,24 @@ public class Main {
         System.out.println("Edad: " + Paco.getEdad());
         System.out.println("Nombre: " + Paco.getNombre());
         System.out.println("Teléfono: " + Paco.getTelefono());
-        System.out.println("Crédito: " + Paco.getCredito());
+        System.out.println("Crédito: " + Paco.getCredito() + "\n");
+
+
+
+        //Instancia de la clase Trabajador
+        Trabajador John = new Trabajador();
+
+        //Procedemos a cambiar los atributos de Paco con los "Setters"
+        John.setEdad(45);
+        John.setNombre("Johnny");
+        John.setTelefono(666555444);
+        John.setSalario(2342.34);
+
+        //Procedemos a mostrar los atributos privados de Paco en pantalla con los "Getters"
+        System.out.println("Edad: " + John.getEdad());
+        System.out.println("Nombre: " + John.getNombre());
+        System.out.println("Teléfono: " + John.getTelefono());
+        System.out.println("Salario: " + John.getSalario());
 
         
     }
@@ -77,4 +94,21 @@ class Cliente extends Persona {
     }
     
 }
+
+// ** Clase Trabajador heredada de Persona **
+
+class Trabajador extends Persona {   
+
+    private double salario;
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+    public double getSalario() {
+        return this.salario;
+    }
+    
+}
+
 
