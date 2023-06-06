@@ -24,13 +24,13 @@ public class Main {
         //Instancia de la clase Trabajador
         Trabajador John = new Trabajador();
 
-        //Procedemos a cambiar los atributos de Paco con los "Setters"
+        //Procedemos a cambiar los atributos de John con los "Setters"
         John.setEdad(45);
         John.setNombre("Johnny");
         John.setTelefono(666555444);
         John.setSalario(2342.34);
 
-        //Procedemos a mostrar los atributos privados de Paco en pantalla con los "Getters"
+        //Procedemos a mostrar los atributos privados de John en pantalla con los "Getters"
         System.out.println("Edad: " + John.getEdad());
         System.out.println("Nombre: " + John.getNombre());
         System.out.println("Teléfono: " + John.getTelefono());
