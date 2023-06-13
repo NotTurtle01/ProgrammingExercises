@@ -1,0 +1,13 @@
+
+.pure-button::before{
+    content: 'Pulsa el botón';
+}
+
+.pure-button:hover{
+    color:white;
+    background-color: green;
+}
+
+.pure-button:hover::before{
+    content: 'Hecho!';
+}
