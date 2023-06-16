@@ -1,0 +1,49 @@
+*{
+    background-color: beige;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-modern{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+/* Transición */
+
+@keyframes cambios{
+    0%{
+        color: black;
+        background-color: aqua;
+    }
+
+    100%{
+        color: white;
+        background-color: darkblue;
+        border-bottom: 3px solid black;
+        transform: translatey(-5px)
+    }
+}
+
+.btn-modern:hover{
+    cursor: pointer;
+    animation: cambios 0.4s forwards;
+}
