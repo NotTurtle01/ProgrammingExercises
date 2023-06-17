@@ -1,0 +1,46 @@
+h1{
+    display:flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+div{
+    padding: 2rem;
+}
+
+.row{
+    width:100%;
+    gap:2rem;
+}
+
+.colm{
+    border:none;
+    border-radius: 10px;
+}
+
+.colm:hover{
+    opacity:0.5;
+    cursor:pointer;
+}
+
+.col{
+    background-color: antiquewhite;
+}
+
+.col-sm{
+    background-color: aqua;
+}
+
+.col-md{
+    background-color: cadetblue;
+}
+
+.col-lg{
+    background-color: darkgoldenrod;
+}
+
+.col-xl{
+    background-color: deeppink;
+}
+
+
