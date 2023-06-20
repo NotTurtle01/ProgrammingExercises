@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        });
+    </script>
+</head>
+
+<body>
+    <div class="seccion1">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4 my-4">Jumbotron Testing</h1>
+                <p class="lead">I do not know what to write here. Maybe a song I guess...</p>
+                <hr class="my-4">
+                <p>Hmmm press the button if you want to earn a 1000$ monthly rent (of course fake lmao).</p>
+                <p class="lead">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Launch demo modal
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Have a nice day!! :v
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <div class="seccion2">
+        <div class="container">
+            <form>
+                <div class="form-group mb-3">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                </div>
+
+                <div class="phone-number mb-3">
+                    <label for="exampleFormControlSelect1">Phone Number</label>
+                    <input type="number" class="form-control" id="exampleFormControlSelect1" aria-describedby="phn" placeholder="+34 XXX XXX XXX">
+                    <small id="phn" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="exampleFormControlTextarea1">Textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write some interesting things..."></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="seccion3 mb-3">
+        <div class="container">
+            <div class="card text-center">
+                <div class="card-header">
+                    NotTurtle01 Developer
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text">Amateur script-kiddie learning HTML basics lmao. Anyway hire me the sooner da better.</p>
+                    <a href="#" class="btn btn-primary">Linkedin Profile</a>
+                </div>
+
+                <div class="card-footer text-muted">
+                    omiranchez@gmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
